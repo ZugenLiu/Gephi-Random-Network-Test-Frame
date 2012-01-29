@@ -1,0 +1,10 @@
+This is a test framework for exploring Random graphs written in Java using NetBeans.  It is written to be a rapid test environment in NetBeans and not a standalone application.
+
+It uses Gephi Toolkit(http://gephi.org/) as a library (and the Gephi bundled jFreeChart) to generate a series of random graphs and associate descriptive statistics, with the ability to generate images of individual results as well as aggregate (average) statistics.
+
+Please be aware it suffers from a variety of problems, since it was patched together to support a short project for a class.  Functionally it suffers thread exhaustion if the number of networks is too high.  Programmatically it suffers from being written without a design phase and no unit testing.
+
+It contains two executable classes:
+	ER_graph_grind - generates a family of ER graphs and outputs images showing average and variance of statistics with changing p.
+	Build_Line_Graph - generates a family of ER graphs, then processes a single ER graph to modify the connectivty.  Displays images of result verses average ER (with variance).
+
